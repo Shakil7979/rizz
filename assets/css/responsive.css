@@ -21,4 +21,7 @@
     .monekey_button li button img {
         width: 15px;
     }
+    .monekey_button li button { 
+        padding: 10px 5px; 
+    }
 }
