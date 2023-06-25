@@ -1,1 +1,21 @@
-responsive.css
+ 
+ @media all and (max-width:575px){
+    .monkey_card{
+        width: 100% ;
+    }
+    .percent { 
+        left: 35%; 
+    }
+    .monekey_button li button p { 
+        font-size: 14px;  
+    }
+    .monekey_button { 
+        overflow-x: scroll;
+    }
+    .monkey_form_title p {  
+        font-size: 14px; 
+    }
+    .monkey_form_title span { 
+        width: 20%;
+    }
+}

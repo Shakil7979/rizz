@@ -1,3 +1,5 @@
+ 
+
 /* Default CSS */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,6 +19,9 @@ time, mark, audio, span, video {
    outline: 0;
    font-size: 100%;
    background: transparent;
+}
+body{
+  font-family: 'Inter', sans-serif;
 }
 table {
    border-collapse: collapse;
@@ -39,7 +44,8 @@ input, button, textarea, select{
 }
 .btn.focus, .btn:focus {
   outline: none;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 ul{
@@ -54,4 +60,296 @@ a{
 }
 a:hover{
   text-decoration: none;
+}
+
+
+/* card css  */
+
+.monkey_card {
+	width: 528px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 17, 51, 0.15);
+	background: var(--main, #8B04FB);
+	padding: 45px 27px 32px 27px;
+	margin: 20px auto;
+}
+
+#countdown ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	gap: 6px;
+}
+
+#countdown ul li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+#countdown ul li p {
+	color: #FFF;
+	font-size: 40px;
+	font-family: Inter;
+	font-weight: 900;
+	line-height: 28px;
+	letter-spacing: 4px;
+	text-align: center;
+}
+
+.count_name {
+	color: #FFF;
+	font-size: 13px;
+	font-family: Inter;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0px;
+}  
+
+
+/* card progress  */
+ 
+
+.bar {
+	position:relative;
+  float:left; 
+  height:100%; 
+	background: #FAE700;
+}
+
+.percent {
+	position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
+  margin:0; 
+	color: #8B04FB;
+	font-size: 12px; 
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.monkey_progress .progress {
+	width: 90%;
+	margin: 10px auto;
+	border-radius: 20px; 
+	background: #B45CFC;
+}
+ 
+.monekey_info p {
+	color: #FFF;
+	font-size: 13px; 
+	font-weight: 500;
+	line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.monekey_info {
+	margin: 18px 0 30px 0;
+	text-align: center;
+}
+
+.monkey_form_title p {
+	color: #FFF;
+	font-size: 16px; 
+	font-weight: 700;
+	line-height: 28px;
+}
+
+.monkey_form_title span {
+	height: 1px;
+	background: #fff;
+  width: 24%;
+}
+
+.monkey_form_title {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+/* monkey tabs  */
+
+.monekey_button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.monekey_button li button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	gap: 8px;
+}
+
+.monekey_button li button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	gap: 8px;
+	border-radius: 10px;
+	border: 1.5px solid rgba(0, 17, 51, 0.15);
+	background: #FFF;
+	padding: 10px 13px;
+	width: 100%;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.monekey_button li {
+	width: 100%;
+}
+
+.monekey_button li button p {
+	color: #A1A1A1;
+	font-size: 16px; 
+	font-weight: 500;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.monekey_button .active p {
+  color: #222223;
+}
+
+.monekey_button .active {
+  color: #222223;
+  border: 1.5px solid #222223; 
+}
+
+.from_input {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background: #fff;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	border-radius: 8px;
+	margin-bottom: 25px;
+	height: 72px;
+}
+
+.from_input img {
+	border-left: 1px solid #ddd;
+}
+
+.form_group{
+  margin-left: 16px;
+}
+
+.form_group input {
+	color: var(--black, #222223);
+	font-size: 20px; 
+	font-weight: 800;
+	line-height: 27px;
+	width: 90%;
+	border: none;
+}
+
+.form_group label {
+	color: rgba(0, 17, 51, 0.60);
+	font-size: 14px;
+	font-family: Inter;
+	line-height: 20px;
+}
+
+.img_monkey {
+	width: 167px;
+	border-left: 1px solid #ddd;
+	height: 72px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.form_submit_btn button {
+	color: var(--main, #8B04FB);
+	text-align: center;
+	font-size: 16px;
+	font-family: Inter;
+	font-weight: 800;
+	line-height: 16px;
+	height: 66px;
+	width: 100%;
+	border-radius: 7px;
+	background: #FFF;
+	border: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form_submit_btn button:hover{
+  opacity: 0.80;
+}
+
+.monkey_footer p {
+	color: #FFF; 
+	font-size: 14px;
+	font-family: Inter;
+	font-weight: 500;
+}
+
+.monkey_footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	gap: 5px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-top: 25px;
+}
+
+.monkey_form{
+  display: none;
+}
+
+.ETH{
+  display: block;
 }
